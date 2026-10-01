@@ -1,0 +1,17 @@
+HTTP/1.1 301 Moved Permanently
+Location: https://www.example.com/start
+Server: nginx/1.18.0
+
+HTTP/2 302
+location: /start/
+x-powered-by: Express
+
+HTTP/2 200
+content-type: text/html; charset=utf-8
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.example.com
+strict-transport-security: max-age=31536000
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+referrer-policy: no-referrer
+permissions-policy: geolocation=()
+

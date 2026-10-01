@@ -1,0 +1,12 @@
+# url: https://www.example.com/
+HTTP/2 200
+content-type: text/html; charset=utf-8
+content-security-policy: default-src 'self'; script-src 'self' 'nonce-r4nd0m'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+permissions-policy: camera=(), microphone=(), geolocation=()
+set-cookie: session=f3a9c1d7e2b8; Path=/; Secure; HttpOnly; SameSite=Lax
+server: nginx
+cache-control: no-store
+

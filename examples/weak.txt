@@ -1,0 +1,13 @@
+# url: https://shop.example.org/
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Security-Policy-Report-Only: default-src 'self'
+Strict-Transport-Security: max-age=86400
+X-Content-Type-Options: nosnif
+Referrer-Policy: unsafe-url
+Set-Cookie: sid=s3cr3t-c00kie-v4lue; Path=/
+Set-Cookie: tracking=abc123; SameSite=None
+Server: Apache/2.4.41 (Ubuntu)
+X-Powered-By: PHP/7.4.3
+X-XSS-Protection: 1; mode=block
+
