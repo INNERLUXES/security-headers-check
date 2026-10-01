@@ -1,0 +1,7 @@
+# Every change is reviewed by a maintainer.
+* @innerluxesdev
+
+# The checks and the cookie masking decide every line of the report; changes need extra care.
+/src/checks.js @innerluxesdev
+/src/csp.js @innerluxesdev
+/src/report.js @innerluxesdev
