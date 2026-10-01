@@ -1,0 +1,46 @@
+{
+  "name": "security-headers-check",
+  "version": "1.0.0",
+  "description": "Check saved HTTP response headers (curl dumps or HAR files) against the OWASP Secure Headers Project: CSP, HSTS, framing, nosniff, referrer, permissions, cookie flags and version leaks. Reads files, opens no network connection, no dependencies.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "security-headers-check": "bin/security-headers-check.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:coverage": "node --test --experimental-test-coverage \"test/*.test.js\"",
+    "check": "node tools/check.mjs",
+    "example": "node tools/example.mjs"
+  },
+  "keywords": [
+    "security-headers",
+    "content-security-policy",
+    "hsts",
+    "owasp",
+    "cookies",
+    "har",
+    "cli"
+  ],
+  "author": "INNERLUXES <info@innerluxes.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INNERLUXES/security-headers-check.git"
+  },
+  "homepage": "https://innerluxes.dev/web-development"
+}
